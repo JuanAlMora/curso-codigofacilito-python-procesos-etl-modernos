@@ -14,6 +14,7 @@ New-Item -Path "$ProjectName\Config" -ItemType Directory
 New-Item -Path "$ProjectName\Data" -ItemType Directory
 New-Item -Path "$ProjectName\Notebooks" -ItemType Directory
 New-Item -Path "$ProjectName\Pipelines" -ItemType Directory
+New-Item -Path "$ProjectName\Transform" -ItemType Directory
 New-Item -Path "$ProjectName\Logs" -ItemType Directory
 
 # Estos comandos cambian el directorio actual a la carpeta del proyecto y luego inicializan un nuevo repositorio Git en esa carpeta.
