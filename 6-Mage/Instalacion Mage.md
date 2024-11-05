@@ -12,11 +12,26 @@ Mage.ai es una herramienta de código abierto que facilita la transformación e 
 
 **Instalación con Docker (la forma recomendada):**
 
-1. **Descarga la imagen de Docker:**
+1. **Clona el repositorio y navega a la carpeta:**
+
    ```bash
-   docker pull mageai/mageai:latest
+   git clone https://github.com/mage-ai/compose-quickstart.git mage-quickstart && cd mage-quickstart
    ```
-2. **Crea un contenedor de Docker:**
+
+2. **Crea las carpetas data y secrets:**
+
    ```bash
-   docker run -p 6789:6789 mageai/mageai:latest
+   mkdir data secrets
+   ```
+
+3. **Copia el archivo:**
+
+   ```bash
+   cp dev.env .env
+   ```
+
+4. **Inicia los contenedores con Docker Compose:**
+
+   ```bash
+   docker compose up -d
    ```
